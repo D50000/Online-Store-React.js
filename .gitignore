@@ -1,0 +1,7 @@
+# frontend node_modules, nextJS packages
+Sophie-Shopping/frontend/node_modules
+Sophie-Shopping/frontend/.next
+
+# others
+sick-fits
+.DS_Store
