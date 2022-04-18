@@ -10,8 +10,8 @@ Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
-// Higher priority than _app.js > index.js
-export default function MyApp({ Component }) {
+// Higher priority order _document > _app.js > index.js
+export default function MyApp({ Component, props }) {
   return (
     <Page>
       <Component />
@@ -21,4 +21,5 @@ export default function MyApp({ Component }) {
 
 MyApp.propTypes = {
   Component: PropTypes.any,
+  props: PropTypes.any,
 };

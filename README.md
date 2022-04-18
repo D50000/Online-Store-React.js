@@ -3,8 +3,8 @@ A Online Store application that build in React.js and GraphQL with MangoDB.
 
 **Front-end**  
 - React.js (data and template binding, rendering)
-- Next.js (SSR, Routing, framework)
-- Styled Components (like css)
+- Next.js (SSR, Routing framework)
+- Styled Components (CSS code in JS way)
 - NProgress.js (Route visualization)
 - Local State ?
 - Apollo's React Hooks
