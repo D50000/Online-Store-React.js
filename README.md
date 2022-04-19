@@ -15,6 +15,7 @@ A Online Store application that build in React.js and GraphQL with MangoDB.
 - GraphQL Queries, Caching Data
 - Mutations(create, update, delete)
 - Error and Loading UI states
+- MongoDB Atlas
 
 **Back-end**  
 - Keystone.js (CMS provide GraphQL APIs)
@@ -39,4 +40,5 @@ A Online Store application that build in React.js and GraphQL with MangoDB.
 |  Node Package Manager   | 6.14.5  |
 |React Developer Tools | Latest |
 |Apollo Client Devtools | Latest |
+|MongoDB Atlas | Online |
 |MongoDB Compass | Latest |
