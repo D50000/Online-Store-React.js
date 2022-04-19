@@ -2,6 +2,10 @@
 Sophie-Shopping/frontend/node_modules
 Sophie-Shopping/frontend/.next
 
+# backend node_modules packages, configs.
+Sophie-Shopping/backend/node_modules
+Sophie-Shopping/backend/.env
+
 # others
 sick-fits
 .DS_Store
