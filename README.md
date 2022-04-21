@@ -12,8 +12,8 @@ A Online Store application that build in React.js and GraphQL with MangoDB.
 
 **Data Base**  
 - Apollo Client (connect and parse the GraphQL with Next.js)
-- GraphQL Queries, Caching Data
-- Mutations(create, update, delete)
+- GraphQL Queries (get data), Caching Data
+- GraphQL Mutations (create, update, delete)
 - Error and Loading UI states
 - MongoDB Atlas
 
