@@ -1,7 +1,7 @@
 {
   "name": "sophie-shopping-frontend",
   "version": "0.0.5",
-  "description": "Sick Fits! An example React, GraphQL, Next and Apollo",
+  "description": "Sophie Shopping! An practice React, GraphQL, Next and Apollo",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 7777",
@@ -9,7 +9,7 @@
     "start": "next start -p 7777",
     "test": "NODE_ENV=test jest --watch"
   },
-  "author": "",
+  "author": "eddie",
   "license": "ISC",
   "dependencies": {
     "@apollo/client": "3.4.0",

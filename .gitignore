@@ -5,6 +5,7 @@ Sophie-Shopping/frontend/.next
 # backend node_modules packages, configs.
 Sophie-Shopping/backend/node_modules
 Sophie-Shopping/backend/.env
+Sophie-Shopping/backend/.keystone
 
 # others
 sick-fits

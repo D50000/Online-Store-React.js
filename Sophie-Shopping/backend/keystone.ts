@@ -1,4 +1,4 @@
-import {config, createSchema } from '@keystone-next/keystone/schema';
+import { config, createSchema } from "@keystone-next/keystone/schema";
 import "dotenv/config";
 
 const databaseURL =
@@ -9,11 +9,23 @@ const sessionConfig = {
   secret: process.env.COOKIE_SECRET,
 };
 
-export default config(
-    sercer:{
-      cors:{
-        origin: [process.env.FRONTEND_URL],
-        credential:true,
-      }
-    }
-)
+export default config({
+  server: {
+    cors: {
+      origin: [process.env.FRONTEND_URL],
+      credentials: true,
+    },
+  },
+  db: {
+    adapter: "mongoose",
+    url: databaseURL,
+  },
+  lists: createSchema({
+    // Schema items input
+  }),
+  ui: {
+    // TODO: Changes this for roles
+    isAccessAllowed: () => true,
+  },
+  // TODO: Add session values here
+});
