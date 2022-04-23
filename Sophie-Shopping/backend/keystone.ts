@@ -1,10 +1,12 @@
-import { createAuth } from "@keystone-next/auth";
 import { config, createSchema } from "@keystone-next/keystone/schema";
+import { createAuth } from "@keystone-next/auth";
 import {
   withItemData,
   statelessSessions,
 } from "@keystone-next/keystone/session";
 import "dotenv/config";
+
+import { Product } from "./schemas/Product";
 import { User } from "./schemas/User";
 
 const databaseURL =
@@ -40,6 +42,7 @@ export default withAuth(
     lists: createSchema({
       // Schema items input
       User: User,
+      Product: Product,
     }),
     ui: {
       // Check the User's permission for login to keystone UI
