@@ -8,7 +8,7 @@ A Online Store application that build in React.js using Next.js and GraphQL with
 - Next.js (SSR, Routing framework)
 - Styled Components (CSS code in JS way)
 - NProgress.js (Route visualization)
-- Local State ?
+- Local State ? (setName, useState)
 - Apollo's React Hooks
 - Jest
 
