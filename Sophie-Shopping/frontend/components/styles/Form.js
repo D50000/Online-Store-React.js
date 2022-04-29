@@ -64,6 +64,7 @@ const Form = styled.form`
         #ff3019 100%
       );
     }
+    /* setup the loading animation style */
     &[aria-busy='true']::before {
       background-size: 50% auto;
       animation: ${loading} 0.5s linear infinite;
