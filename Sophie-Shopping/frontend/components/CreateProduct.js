@@ -1,5 +1,6 @@
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/client';
+import Router from 'next/router';
 
 import Form from './styles/Form';
 import DisplayError from './ErrorMessage';
@@ -53,8 +54,11 @@ export default function CreateProduct() {
         console.log(inputs);
         e.preventDefault();
         // Destructuring into [createProduct, { loading, error, data }] with the latest state.
-        await createProduct();
+        const res = await createProduct();
         clearForm();
+        Router.push({
+          pathname: `/product/${res.data.createProduct.id}`,
+        });
       }}
     >
       <DisplayError error={error} />
