@@ -20,6 +20,19 @@ export default function Product({ product }) {
       <PriceTag>{formatMoney(product.price)}</PriceTag>
       <p>{product.description}</p>
       {/* TODO: Add btns to edit/delete */}
+      <div className="buttonList">
+        <Link
+          // next.js routing syntax
+          href={{
+            pathname: 'update',
+            query: {
+              id: product.id,
+            },
+          }}
+        >
+          Edit !
+        </Link>
+      </div>
     </ItemStyles>
   );
 }
