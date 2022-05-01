@@ -4,7 +4,6 @@ import Router from 'next/router';
 
 import Form from './styles/Form';
 import DisplayError from './ErrorMessage';
-
 import useForm from '../lib/useForm';
 import { All_PRODUCTS_QUERY } from './Products';
 
@@ -68,7 +67,7 @@ export default function CreateProduct() {
           <input type="file" id="image" name="image" onChange={handleChange} />
         </label>
         <label htmlFor="name">
-          name
+          Name
           <input
             type="text"
             id="name"
