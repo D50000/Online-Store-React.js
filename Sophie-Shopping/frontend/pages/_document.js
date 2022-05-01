@@ -1,6 +1,7 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
+// Routing order _document > _app.js > index.js > pages/[?]
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet();
