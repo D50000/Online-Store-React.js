@@ -44,6 +44,7 @@ export default function SingleProductPage({ id }) {
   });
   if (loading) return <p>Loading .......</p>;
   if (error) return <DisplayError error={error} />;
+
   const { Product } = data;
   return (
     <ProductStyles>
