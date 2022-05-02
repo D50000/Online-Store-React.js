@@ -1,7 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function useForm(initial = {}) {
   const [inputs, setInputs] = useState(initial);
+  const initailValues = Object.values(initial).join('');
+
+  // Similar to Angular ngOnchange.
+  useEffect(() => {
+    setInputs(initial);
+  }, [initailValues]);
 
   function handleChange(e) {
     // Handle the data type that pass in.
