@@ -10,22 +10,22 @@ A Online Store application that build in React.js using Next.js and GraphQL with
 - NProgress.js (Route visualization)
 - Local State ?
 - props, hooks, state (setName, useState, useEffect)
-- Apollo's React Hooks
+- Apollo's React Hooks (refetchQueries, cache.evict(cache.identify()))
 - Jest
 
 **Data Base**
 
 - Apollo Client (connect and parse the GraphQL with Next.js)
-- GraphQL Queries (get data), Caching Data
-- GraphQL Mutations (create, update, delete)
-- Error and Loading UI states
+- GraphQL Queries (get data, Caching Data in Apollo)
+- GraphQL Mutations (create, update, delete, Caching Data in Apollo)
+- Error and Loading UI states (handle and return by @apollo/client)
 - MongoDB Atlas
 
 **Back-end**
 
 - Keystone.js (CMS provide GraphQL APIs)
-- GraphQL CRUD APIs with MongoDB or Prisma DB ?
-- Schema Definition
+- GraphQL CRUD APIs with MongoDB (Interact with Apollo)
+- Data Schema Definition
 - Data Relationships (Product reference to Image)
 - Open Source + Self-hosted
 - Node.js
