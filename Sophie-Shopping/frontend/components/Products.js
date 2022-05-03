@@ -35,6 +35,7 @@ export default function Products({ page }) {
       skip: page * perPage - perPage,
       first: perPage,
     },
+    fetchPolicy: 'no-cache',
   });
   console.log(data, error, loading);
   if (loading) {

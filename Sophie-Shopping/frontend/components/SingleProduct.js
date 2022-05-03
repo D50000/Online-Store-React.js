@@ -52,7 +52,7 @@ export default function SingleProductPage({ id }) {
         <title>Sophie Shopping | {Product.name}</title>
       </Head>
       <img
-        src={Product.photo.image.publicUrlTransformed}
+        src={Product.photo.image?.publicUrlTransformed}
         alt={Product.photo.altText}
       />
       <div className="details">
