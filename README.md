@@ -23,7 +23,7 @@ A Online Store application that build in React.js using Next.js and GraphQL with
 
 **Back-end**
 
-- Keystone.js (CMS provide GraphQL APIs)
+- Keystone.js (CMS provide GraphQL APIs and Auth feature)
 - GraphQL CRUD APIs with MongoDB (Interact with Apollo)
 - Data Schema Definition
 - Data Relationships (Product reference to Image)
