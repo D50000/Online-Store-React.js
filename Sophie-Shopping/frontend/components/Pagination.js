@@ -31,7 +31,7 @@ export default function Pagination({ page }) {
     <PaginationStyles>
       <Head>
         <title>
-          Page {page} of {pageCount}
+          Sopphie Shopping - Page {page} of {pageCount}
         </title>
       </Head>
       <Link href={`/products/${page - 1}`}>
