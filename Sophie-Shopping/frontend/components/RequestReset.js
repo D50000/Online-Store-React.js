@@ -19,7 +19,7 @@ export default function RequestReset() {
     email: '',
   });
 
-  const [signup, { data, loading, error }] = useMutation(
+  const [requestReset, { data, loading, error }] = useMutation(
     REQUEST_RESET_MUTATION,
     {
       variables: inputs,
@@ -28,7 +28,7 @@ export default function RequestReset() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const res = await signup().catch(console.error);
+    const res = await requestReset().catch(console.error);
     console.log(res);
     console.log({ inputs, data, loading, error });
     resetForm();
@@ -36,7 +36,7 @@ export default function RequestReset() {
 
   return (
     <Form method="POST" onSubmit={handleSubmit}>
-      <h2>Sign Up Your Account</h2>
+      <h2>Request to Reset Your Account</h2>
       <Error error={error} />
       <fieldset>
         {data?.SendUserPasswordResetLinkResult === null && (
