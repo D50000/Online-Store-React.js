@@ -4,13 +4,14 @@ import {
   withItemData,
   statelessSessions,
 } from "@keystone-next/keystone/session";
-import "dotenv/config";
 
+import "dotenv/config";
 import { User } from "./schemas/User";
 import { Product } from "./schemas/Product";
 import { ProductImage } from "./schemas/ProductImage";
 import { insertSeedData } from "./seed-data";
 import { sendPasswordResetEmail } from "./lib/mail";
+import { CartItem } from "./schemas/CartItem";
 
 const databaseURL =
   process.env.DATABASE_URL || "mongodb://localhost/Sophie-Shopping";
@@ -58,6 +59,7 @@ export default withAuth(
       User: User,
       Product: Product,
       ProductImage: ProductImage,
+      CartItem: CartItem,
     }),
     ui: {
       // Check the User's permission for login to keystone UI
