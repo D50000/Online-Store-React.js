@@ -5,6 +5,8 @@ import {
   statelessSessions,
 } from "@keystone-next/keystone/session";
 
+import { extendGraphqlSchema } from "./mutations/index";
+
 import "dotenv/config";
 import { User } from "./schemas/User";
 import { Product } from "./schemas/Product";
@@ -61,6 +63,7 @@ export default withAuth(
       ProductImage: ProductImage,
       CartItem: CartItem,
     }),
+    extendGraphqlSchema: extendGraphqlSchema,
     ui: {
       // Check the User's permission for login to keystone UI
       isAccessAllowed: ({ session }) => {
