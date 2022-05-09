@@ -3,9 +3,11 @@ import styled from 'styled-components';
 
 import formatMoney from '../lib/formatMoney';
 import calcTotalPrice from '../lib/calcTotalPrice';
+import { useCart } from '../lib/cartState';
 
 import CartStyles from './styles/CartStyles';
 import Supreme from './styles/Supreme';
+import CloseButton from './styles/CloseButton';
 import { useUser } from './User';
 
 const CartItemStyles = styled.li`
@@ -50,13 +52,19 @@ CartItem.propTypes = {
 };
 
 export default function Cart() {
+  // function hooks
   const user = useUser();
+  const { cartOpen, closeCart } = useCart();
   if (!user) return null;
-  console.log(user);
+  // console.log(user);
+
   return (
-    <CartStyles open>
+    <CartStyles open={cartOpen}>
       <header>
         <Supreme>{user.name}'s Cart</Supreme>
+        <CloseButton type="button" onClick={closeCart}>
+          &times;
+        </CloseButton>
       </header>
       <ul>
         {user.cart.map((cartItem) => (
