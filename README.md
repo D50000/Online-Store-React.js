@@ -1,4 +1,4 @@
-# Online Store
+# Online Store in React.js/Next.js
 
 A Online Store application that build in React.js using Next.js and GraphQL with MangoDB.
 
@@ -10,8 +10,8 @@ A Online Store application that build in React.js using Next.js and GraphQL with
 - NProgress.js (Route visualization)
 - Local State (hook context through components by root provider)
 - props, hooks, state (setName, useState, useEffect)
-- Apollo's React Hooks (refetchQueries, cache.evict(cache.identify()))
-- Jest
+- Apollo's React Hooks ('refetchQueries', 'cache.evict(cache.identify())')
+- Jest (test runner) and React-testing-library (https://testing-library.com/docs/react-testing-library/intro/).
 
 **Data Base**
 
@@ -36,7 +36,7 @@ A Online Store application that build in React.js using Next.js and GraphQL with
 - Authentication
 - Managing Roles Permissions
 
-## Evironment
+## Environment
 
 | NAME                       | VERSION |
 | :------------------------- | :-----: |
@@ -48,3 +48,7 @@ A Online Store application that build in React.js using Next.js and GraphQL with
 | Apollo Client Devtools     | Latest  |
 | MongoDB Atlas              | Online  |
 | MongoDB Compass            | Latest  |
+
+### Notes
+
+- Stripe key need to regenerate.
