@@ -30,7 +30,7 @@ A Online Store application that build in React.js using Next.js and GraphQL with
 - Open Source + Self-hosted
 - Node.js
 - GraphQL setup Mutation Resolvers
-- Server Side Bussiness Logic
+- Server Side Business Logic
 - Charging Credit Cards with 'Stripe' (https://dashboard.stripe.com)
 - Sending Email (https://ethereal.email)
 - Authentication

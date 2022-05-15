@@ -16,6 +16,7 @@ import { sendPasswordResetEmail } from "./lib/mail";
 import { CartItem } from "./schemas/CartItem";
 import { OrderItem } from "./schemas/OrderItem";
 import { Order } from "./schemas/Order";
+import { Role } from "./schemas/Role";
 
 const databaseURL =
   process.env.DATABASE_URL || "mongodb://localhost/Sophie-Shopping";
@@ -66,6 +67,7 @@ export default withAuth(
       CartItem: CartItem,
       OrderItem: OrderItem,
       Order: Order,
+      Role: Role,
     }),
     extendGraphqlSchema: extendGraphqlSchema,
     ui: {
