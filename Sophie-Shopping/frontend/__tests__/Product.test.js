@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { MockedProvider } from '@apollo/react-testing';
 
 import Product from '../components/Product';
@@ -19,7 +19,13 @@ describe('<Product/>', () => {
     );
     // Assert
     debug(); // Debug will convert the React Node to html structure.
-    // const priceTag = screen.getByText('$50');
-    // expect(priceTag).toBeInTheDocument();
+    const priceTag = screen.getByText('NT$5,000'); // 'screen' is the result of the render.
+    // Expect
+    expect(priceTag).toBeInTheDocument();
+
+    const link = container.querySelector('a');
+    debug(link);
+    expect(link).toHaveAttribute('href', '/product/abc123');
+    expect(link).toHaveTextContent(product.name);
   });
 });
