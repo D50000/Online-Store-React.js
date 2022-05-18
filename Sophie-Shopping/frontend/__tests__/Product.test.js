@@ -28,4 +28,17 @@ describe('<Product/>', () => {
     expect(link).toHaveAttribute('href', '/product/abc123');
     expect(link).toHaveTextContent(product.name);
   });
+
+  it('Renders and matches the snapshot', () => {
+    // Act
+    const { container, debug } = render(
+      <CartStateProvider>
+        <MockedProvider>
+          <Product product={product} />
+        </MockedProvider>
+      </CartStateProvider>
+    );
+    // Expect
+    expect(container).toMatchSnapshot();
+  });
 });
