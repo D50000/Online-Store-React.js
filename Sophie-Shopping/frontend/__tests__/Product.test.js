@@ -41,4 +41,18 @@ describe('<Product/>', () => {
     // Expect
     expect(container).toMatchSnapshot();
   });
+
+  it('render the image property', () => {
+    // Act
+    const { container, debug } = render(
+      <CartStateProvider>
+        <MockedProvider>
+          <Product product={product} />
+        </MockedProvider>
+      </CartStateProvider>
+    );
+    const img = screen.getByAltText(product.name);
+    // Expect
+    expect(img).toBeInTheDocument();
+  });
 });
