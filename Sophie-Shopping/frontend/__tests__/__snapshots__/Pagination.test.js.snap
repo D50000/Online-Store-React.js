@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> disable the next page on last page 1`] = `
+<div>
+  <div
+    class="PaginationStyles-sc-zbbm55-0 jzlRep"
+    data-testid="pagination"
+  >
+    <a
+      aria-disabled="false"
+      href="/products/2"
+    >
+      -- Previous
+    </a>
+    <p>
+      Page 
+      3
+       of 
+      <span
+        data-testid="pageCount"
+      >
+        3
+      </span>
+    </p>
+    <p>
+       
+      10
+       Items Total
+    </p>
+    <a
+      aria-disabled="true"
+      href="/products/4"
+    >
+      Next ++
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<Pagination /> disable the prev page on first page 1`] = `
+<div>
+  <div
+    class="PaginationStyles-sc-zbbm55-0 jzlRep"
+    data-testid="pagination"
+  >
+    <a
+      aria-disabled="true"
+      href="/products/0"
+    >
+      -- Previous
+    </a>
+    <p>
+      Page 
+      1
+       of 
+      <span
+        data-testid="pageCount"
+      >
+        3
+      </span>
+    </p>
+    <p>
+       
+      10
+       Items Total
+    </p>
+    <a
+      aria-disabled="false"
+      href="/products/2"
+    >
+      Next ++
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<Pagination /> enables both on middle page 1`] = `
+<div>
+  <div
+    class="PaginationStyles-sc-zbbm55-0 jzlRep"
+    data-testid="pagination"
+  >
+    <a
+      aria-disabled="false"
+      href="/products/1"
+    >
+      -- Previous
+    </a>
+    <p>
+      Page 
+      2
+       of 
+      <span
+        data-testid="pageCount"
+      >
+        3
+      </span>
+    </p>
+    <p>
+       
+      10
+       Items Total
+    </p>
+    <a
+      aria-disabled="false"
+      href="/products/3"
+    >
+      Next ++
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<Pagination /> render pagination for 18 items 1`] = `
+<div>
+  <div
+    class="PaginationStyles-sc-zbbm55-0 jzlRep"
+    data-testid="pagination"
+  >
+    <a
+      aria-disabled="true"
+      href="/products/0"
+    >
+      -- Previous
+    </a>
+    <p>
+      Page 
+      1
+       of 
+      <span
+        data-testid="pageCount"
+      >
+        5
+      </span>
+    </p>
+    <p>
+       
+      18
+       Items Total
+    </p>
+    <a
+      aria-disabled="false"
+      href="/products/2"
+    >
+      Next ++
+    </a>
+  </div>
+</div>
+`;

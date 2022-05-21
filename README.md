@@ -12,6 +12,7 @@ A Online Store application that build in React.js using Next.js and GraphQL with
 - props, hooks, state (setName, useState, useEffect)
 - Apollo's React Hooks ('refetchQueries', 'cache.evict(cache.identify())')
 - Jest (test runner) and React-testing-library (https://testing-library.com/docs/react-testing-library/intro/).
+- Test Driven Development (TDD)
 
 **Data Base**
 
