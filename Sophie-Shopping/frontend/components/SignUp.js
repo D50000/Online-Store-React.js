@@ -5,7 +5,7 @@ import Form from './styles/Form';
 import useFomr from '../lib/useForm';
 import Error from './ErrorMessage';
 
-const SIGNUP_MUTATION = gql`
+export const SIGNUP_MUTATION = gql`
   mutation SIGNUP_MUTATION(
     $email: String!
     $name: String!
