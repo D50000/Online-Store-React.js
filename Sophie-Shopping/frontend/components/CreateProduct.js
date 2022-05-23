@@ -7,7 +7,7 @@ import DisplayError from './ErrorMessage';
 import useForm from '../lib/useForm';
 import { All_PRODUCTS_QUERY } from './Products';
 
-const CREATE_PRODUCT_MUTATION = gql`
+export const CREATE_PRODUCT_MUTATION = gql`
   mutation CREATE_PRODUCT_MUTATION(
     $name: String!
     $description: String!
