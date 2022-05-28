@@ -5,13 +5,13 @@ A Online Store application that build in React.js using Next.js and GraphQL with
 **Front-end**
 
 - React.js (data and template binding, rendering)
-- Next.js (SSR, Routing framework)
+- [Next.js](https://nextjs.org/learn/foundations/about-nextjs) (SSR, Routing framework)
 - Styled Components (CSS code in JS way)
 - NProgress.js (Route visualization)
 - Local State (hook context through components by root provider)
 - props, hooks, state (setName, useState, useEffect)
 - Apollo's React Hooks ('refetchQueries', 'cache.evict(cache.identify())')
-- Jest (test runner) and React-testing-library (https://testing-library.com/docs/react-testing-library/intro/).
+- [Jest](https://testing-library.com/docs/react-testing-library/intro/) (test runner) and React-testing-library .
 - Test Driven Development (TDD)
 
 **Data Base**
@@ -32,8 +32,8 @@ A Online Store application that build in React.js using Next.js and GraphQL with
 - Node.js
 - GraphQL setup Mutation Resolvers
 - Server Side Business Logic
-- Charging Credit Cards with 'Stripe' (https://dashboard.stripe.com)
-- Sending Email (https://ethereal.email)
+- Charging Credit Cards with [Stripe](https://dashboard.stripe.com) 
+- Sending Email by [ethereal](https://ethereal.email)
 - Authentication
 - Managing Roles Permissions
 
