@@ -9,7 +9,7 @@ A Online Store application that build in React.js using Next.js and GraphQL with
 - Styled Components (CSS code in JS way)
 - NProgress.js (Route visualization)
 - Local State (hook context through components by root provider)
-- props, hooks, state (setName, useState, useEffect)
+- props, hooks, state (setName, useState, [useEffect](https://zh-hant.reactjs.org/docs/hooks-effect.html#example-using-hooks))
 - Apollo's React Hooks ('refetchQueries', 'cache.evict(cache.identify())')
 - [Jest](https://testing-library.com/docs/react-testing-library/intro/) (test runner) and React-testing-library .
 - Test Driven Development (TDD)
