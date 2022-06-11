@@ -3,7 +3,7 @@ import { useMutation } from '@apollo/client';
 import PropTypes from 'prop-types';
 
 import Form from './styles/Form';
-import useFomr from '../lib/useForm';
+import useForm from '../lib/useForm';
 import Error from './ErrorMessage';
 
 const RESET_MUTATION = gql`
@@ -24,7 +24,7 @@ const RESET_MUTATION = gql`
 `;
 
 export default function Reset({ token }) {
-  const { inputs, handleChange, resetForm } = useFomr({
+  const { inputs, handleChange, resetForm } = useForm({
     email: '',
     password: '',
     token: '',
